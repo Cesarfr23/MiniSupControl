@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MiniSupControl
+namespace MiniSupControl.Registros
 {
-    public partial class MiniSupControl : Form
+    public partial class Productos : Form
     {
-        public MiniSupControl()
+        public Productos()
         {
             InitializeComponent();
-        }
-
-        private void usuarioDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

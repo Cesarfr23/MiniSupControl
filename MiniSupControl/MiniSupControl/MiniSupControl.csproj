@@ -54,6 +54,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\Proveedor.Designer.cs">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\UsuarioSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\UsuarioSistema.Designer.cs">
+      <DependentUpon>UsuarioSistema.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MiniSupControl.resx">
       <DependentUpon>MiniSupControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +90,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registros\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\Proveedor.resx">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\UsuarioSistema.resx">
+      <DependentUpon>UsuarioSistema.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
