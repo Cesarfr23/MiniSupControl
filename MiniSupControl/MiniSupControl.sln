@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSupControl", "MiniSupCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F4A06702-9BD5-4CAC-B1E2-9F4BEFEB53A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{2D834CF2-2B40-4659-9E6E-663A426FB7BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{D2C0B0CD-EBC7-44B0-A683-BAFA781BE740}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F4A06702-9BD5-4CAC-B1E2-9F4BEFEB53A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A06702-9BD5-4CAC-B1E2-9F4BEFEB53A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A06702-9BD5-4CAC-B1E2-9F4BEFEB53A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D834CF2-2B40-4659-9E6E-663A426FB7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D834CF2-2B40-4659-9E6E-663A426FB7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D834CF2-2B40-4659-9E6E-663A426FB7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D834CF2-2B40-4659-9E6E-663A426FB7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C0B0CD-EBC7-44B0-A683-BAFA781BE740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C0B0CD-EBC7-44B0-A683-BAFA781BE740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C0B0CD-EBC7-44B0-A683-BAFA781BE740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C0B0CD-EBC7-44B0-A683-BAFA781BE740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
