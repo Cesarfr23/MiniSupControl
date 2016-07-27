@@ -16,7 +16,7 @@ namespace MiniSupControl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MiniSupControl());
+            Application.Run(new Login());
         }
     }
 }
