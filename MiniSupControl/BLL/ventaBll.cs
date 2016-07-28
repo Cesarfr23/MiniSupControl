@@ -38,24 +38,27 @@ namespace BLL
             return db.venta.Find(VentaId);
 
         }
-        public static venta Eliminar(int VentaId)
+        public static void Eliminar(int VentaId)
         {
-            var db = new MiniSubControlDb();
+            using (var db = new MiniSubControlDb())
+            {
+                var Venta = db.venta.Find(VentaId);
 
-            return db.venta.Find(VentaId);
-
-            db.venta.Remove(VentaId);
-            db.SaveChanges();
+                db.venta.Remove(Venta);
+                db.SaveChanges();
+            }
 
         }
 
-        public static venta Modificar(int VentaId)
+        public static void Modificar(int VentaId, DateTime fecha)
         {
-            var db = new MiniSubControlDb();
-
-            return db.venta.Find(VentaId);
+            using (var db = new MiniSubControlDb())
+            {
+                var Venta = db.venta.Find(VentaId);
+                Venta.Fecha = fecha;
+                db.SaveChanges();
+            }
         }
-
         public static List<venta> GetLista()
         {
             List<venta> lista = new List<venta>();

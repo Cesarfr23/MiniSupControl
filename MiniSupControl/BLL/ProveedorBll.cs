@@ -38,22 +38,26 @@ namespace BLL
             return db.Proveedor.Find(ProveedorId);
 
         }
-        public static Proveedor Eliminar(int ProveedorId)
+        public static void Eliminar(int ProveedorId)
         {
-            var db = new MiniSubControlDb();
+            using (var db = new MiniSubControlDb())
+            {
+                var proveedor = db.Proveedor.Find(ProveedorId);
 
-            return db.Proveedor.Find(ProveedorId);
-
-            db.Proveedor.Remove(ProveedorId);
-            db.SaveChanges();
+                db.Proveedor.Remove(proveedor);
+                db.SaveChanges();
+            }
 
         }
 
-        public static Proveedor Modificar(int ProveedorId)
+        public static void Modificar(int ProveedorId, string empresa)
         {
-            var db = new MiniSubControlDb();
-
-            return db.Proveedor.Find(ProveedorId);
+            using (var db = new MiniSubControlDb())
+            {
+                var proveedor = db.Proveedor.Find(ProveedorId);
+                proveedor.Empresa = empresa;
+                db.SaveChanges();
+            }
         }
 
         public static List<Proveedor> GetLista()

@@ -38,24 +38,27 @@ namespace BLL
             return db.TipoUsuario.Find(TipoUsuarioId);
 
         }
-        public static TipoUsuario Eliminar(int TipoUsuarioId)
+        public static void Eliminar(int TipoUsuarioId)
         {
-            var db = new MiniSubControlDb();
+            using (var db = new MiniSubControlDb())
+            {
+                var tipoUsuario = db.TipoUsuario.Find(TipoUsuarioId);
 
-            return db.TipoUsuario.Find(TipoUsuarioId);
-
-            db.TipoUsuario.Remove(TipoUsuarioId);
-            db.SaveChanges();
+                db.TipoUsuario.Remove(tipoUsuario);
+                db.SaveChanges();
+            }
 
         }
 
-        public static TipoUsuario Modificar(int TipoUsuarioId)
+        public static void Modificar(int TipoUsuarioId, string nombre)
         {
-            var db = new MiniSubControlDb();
-
-            return db.TipoUsuario.Find(TipoUsuarioId);
+            using (var db = new MiniSubControlDb())
+            {
+                var tipoUsuario = db.TipoUsuario.Find(TipoUsuarioId);
+                tipoUsuario.Administrador = nombre;
+                db.SaveChanges();
+            }
         }
-
         public static List<TipoUsuario> GetLista()
         {
             List<TipoUsuario> lista = new List<TipoUsuario>();

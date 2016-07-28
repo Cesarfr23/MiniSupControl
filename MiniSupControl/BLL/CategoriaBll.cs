@@ -38,22 +38,27 @@ namespace BLL
             return db.Categoria.Find(CategoriaId);
 
         }
-        public static void Eliminar()
+
+        public static void Eliminar(int CategoriaId)
         {
-            var db = new MiniSubControlDb();
+            using (var db = new MiniSubControlDb())
+            {
+                var categoria = db.Categoria.Find(CategoriaId);
 
-            Categoria categoria = db.Categoria.Find();
-
-            db.Categoria.Remove(categoria);
-            db.SaveChanges();
+                db.Categoria.Remove(categoria);
+                db.SaveChanges();
+            }
 
         }
 
-        public static Categoria Modificar(int CategoriaId)
+        public static void Modificar(int CategoriaId, string nombre)
         {
-            var db = new MiniSubControlDb();
-
-            return db.Categoria.Find(CategoriaId);
+            using (var db = new MiniSubControlDb())
+            {
+                var categoria = db.Categoria.Find(CategoriaId);
+                categoria.Nombre = nombre;
+                db.SaveChanges();
+            }
         }
 
         public static List<Categoria> GetLista()
