@@ -38,13 +38,13 @@ namespace BLL
             return db.Categoria.Find(CategoriaId);
 
         }
-        public static Categoria Eliminar(int CategoriaId)
+        public static void Eliminar()
         {
             var db = new MiniSubControlDb();
 
-            return db.Categoria.Find(CategoriaId);
+            Categoria categoria = db.Categoria.Find();
 
-            db.Categoria.Remove(CategoriaId);
+            db.Categoria.Remove(categoria);
             db.SaveChanges();
 
         }

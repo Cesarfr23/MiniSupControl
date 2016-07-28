@@ -106,6 +106,7 @@
             this.AceptarButton.BackColor = System.Drawing.Color.White;
             this.AceptarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AceptarButton.ForeColor = System.Drawing.Color.MediumBlue;
+            this.AceptarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AceptarButton.Location = new System.Drawing.Point(105, 292);
             this.AceptarButton.Name = "AceptarButton";
             this.AceptarButton.Size = new System.Drawing.Size(127, 38);
