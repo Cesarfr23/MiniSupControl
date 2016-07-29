@@ -50,12 +50,11 @@ namespace BLL
 
         }
 
-        public static void Modificar(int VentaId, DateTime fecha)
+        public static void Modificar(int VentaId)
         {
             using (var db = new MiniSubControlDb())
             {
                 var Venta = db.venta.Find(VentaId);
-                Venta.Fecha = fecha;
                 db.SaveChanges();
             }
         }

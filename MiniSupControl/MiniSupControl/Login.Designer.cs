@@ -92,27 +92,34 @@
             this.CancelarButton.BackColor = System.Drawing.Color.White;
             this.CancelarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelarButton.ForeColor = System.Drawing.Color.MediumBlue;
-            this.CancelarButton.Location = new System.Drawing.Point(398, 292);
+            this.CancelarButton.Image = ((System.Drawing.Image)(resources.GetObject("CancelarButton.Image")));
+            this.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CancelarButton.Location = new System.Drawing.Point(401, 292);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(127, 38);
+            this.CancelarButton.Size = new System.Drawing.Size(127, 46);
             this.CancelarButton.TabIndex = 7;
             this.CancelarButton.Text = "Cancelar";
-            this.CancelarButton.UseVisualStyleBackColor = false;
+            this.CancelarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.CancelarButton.UseVisualStyleBackColor = true;
             // 
             // AceptarButton
             // 
             this.AceptarButton.AllowDrop = true;
             this.AceptarButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AceptarButton.BackColor = System.Drawing.Color.White;
+            this.AceptarButton.BackColor = System.Drawing.Color.Transparent;
             this.AceptarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AceptarButton.ForeColor = System.Drawing.Color.MediumBlue;
+            this.AceptarButton.Image = ((System.Drawing.Image)(resources.GetObject("AceptarButton.Image")));
             this.AceptarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AceptarButton.Location = new System.Drawing.Point(105, 292);
             this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(127, 38);
+            this.AceptarButton.Size = new System.Drawing.Size(124, 46);
             this.AceptarButton.TabIndex = 6;
             this.AceptarButton.Text = "Aceptar";
+            this.AceptarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AceptarButton.UseMnemonic = false;
             this.AceptarButton.UseVisualStyleBackColor = false;
+            this.AceptarButton.UseWaitCursor = true;
             this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
             // 
             // Login

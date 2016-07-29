@@ -134,9 +134,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{d2c0b0cd-ebc7-44b0-a683-bafa781be740}</Project>
@@ -146,6 +144,29 @@
       <Project>{2d834cf2-2b40-4659-9e6e-663a426fb7bf}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1452825463_agt_action_fail.png" />
+    <Content Include="Resources\1452825521_Add.png" />
+    <Content Include="Resources\1452899178_trash.png" />
+    <Content Include="Resources\1453541179_ok-sign.png" />
+    <Content Include="Resources\1453541193_save.png" />
+    <Content Include="Resources\1453541260_search.png" />
+    <Content Include="Resources\1455135756_Card_file.png" />
+    <Content Include="Resources\1458766531_Key.png" />
+    <Content Include="Resources\Buscar.png" />
+    <Content Include="Resources\Capture3.PNG" />
+    <Content Include="Resources\Eliminar..png" />
+    <Content Include="Resources\Eliminar.png" />
+    <Content Include="Resources\Exit_delete_close_remove_door_logout_out.png" />
+    <Content Include="Resources\Icono_encuesta.png" />
+    <Content Include="Resources\Info-32.png" />
+    <Content Include="Resources\LogoProyectoLogin.jpg" />
+    <Content Include="Resources\Modificar..png" />
+    <Content Include="Resources\Modificar.png" />
+    <Content Include="Resources\Nuevo..png" />
+    <Content Include="Resources\Nuevo.png" />
+    <Content Include="Resources\ProyectoFondoOriginal.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
