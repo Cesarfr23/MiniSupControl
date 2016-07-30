@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MiniSupControl.Properties {
+namespace MiniSup.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,21 +25,12 @@ namespace MiniSupControl.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool MiniSubControlDb {
-            get {
-                return ((bool)(this["MiniSubControlDb"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4ECK98H\\SQLEXPRESS;Initial Catalog=MiniSubControlDb;Integrate" +
             "d Security=True")]
-        public string MiniSubControl {
+        public string MiniSupControl {
             get {
-                return ((string)(this["MiniSubControl"]));
+                return ((string)(this["MiniSupControl"]));
             }
         }
     }

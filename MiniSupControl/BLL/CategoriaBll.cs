@@ -51,12 +51,12 @@ namespace BLL
 
         }
 
-        public static void Modificar(int CategoriaId, string nombre)
+        public static void Modificar(int CategoriaId, string descripcion)
         {
             using (var db = new MiniSubControlDb())
             {
                 var categoria = db.Categoria.Find(CategoriaId);
-                categoria.Nombre = nombre;
+                categoria.Descripcion = descripcion;
                 db.SaveChanges();
             }
         }

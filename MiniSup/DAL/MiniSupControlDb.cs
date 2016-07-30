@@ -1,17 +1,16 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
-using Entidades;
 
 namespace DAL
 {
-    public class MiniSubControlDb : DbContext
+    public class MiniSupControlDb : DbContext
     {
-        public MiniSubControlDb() : base("name=MiniSupControl")
+        public MiniSupControlDb() : base("name=MiniSupControl")
         {
         }
         public virtual DbSet<Categoria> Categoria { get; set; }
@@ -23,7 +22,7 @@ namespace DAL
         public virtual DbSet<Producto> Producto { get; set; }
         public virtual DbSet<Proveedor> Proveedor { get; set; }
         public virtual DbSet<Usuario> Usuario { set; get; }
-        public virtual DbSet<venta> venta { get; set; }
+        public virtual DbSet<Venta> venta { get; set; }
 
-}
+    }
 }
