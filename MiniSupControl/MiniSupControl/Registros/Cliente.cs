@@ -16,5 +16,10 @@ namespace MiniSupControl.Registros
         {
             InitializeComponent();
         }
+
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

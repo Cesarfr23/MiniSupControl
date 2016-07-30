@@ -90,6 +90,7 @@
             this.CancelarButton.AllowDrop = true;
             this.CancelarButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CancelarButton.BackColor = System.Drawing.Color.White;
+            this.CancelarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelarButton.ForeColor = System.Drawing.Color.MediumBlue;
             this.CancelarButton.Image = ((System.Drawing.Image)(resources.GetObject("CancelarButton.Image")));
@@ -100,13 +101,13 @@
             this.CancelarButton.TabIndex = 7;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.UseVisualStyleBackColor = false;
             // 
             // AceptarButton
             // 
-            this.AceptarButton.AllowDrop = true;
             this.AceptarButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AceptarButton.BackColor = System.Drawing.Color.Transparent;
+            this.AceptarButton.BackColor = System.Drawing.Color.White;
+            this.AceptarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AceptarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AceptarButton.ForeColor = System.Drawing.Color.MediumBlue;
             this.AceptarButton.Image = ((System.Drawing.Image)(resources.GetObject("AceptarButton.Image")));
@@ -117,9 +118,7 @@
             this.AceptarButton.TabIndex = 6;
             this.AceptarButton.Text = "Aceptar";
             this.AceptarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.AceptarButton.UseMnemonic = false;
             this.AceptarButton.UseVisualStyleBackColor = false;
-            this.AceptarButton.UseWaitCursor = true;
             this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
             // 
             // Login
