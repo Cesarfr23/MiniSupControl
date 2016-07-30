@@ -1,6 +1,6 @@
 ﻿namespace MiniSupControl.Registros
 {
-    partial class Categoria
+    partial class rPresentacion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Categoria));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rPresentacion));
             this.label7 = new System.Windows.Forms.Label();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.ModificarButton = new System.Windows.Forms.Button();
@@ -48,11 +48,11 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(137, 21);
+            this.label7.Location = new System.Drawing.Point(121, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 26);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Categoria";
+            this.label7.Size = new System.Drawing.Size(158, 26);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Presentación ";
             // 
             // EliminarButton
             // 
@@ -62,10 +62,10 @@
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(283, 217);
+            this.EliminarButton.Location = new System.Drawing.Point(283, 221);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 61);
-            this.EliminarButton.TabIndex = 10;
+            this.EliminarButton.TabIndex = 16;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.EliminarButton.UseVisualStyleBackColor = false;
@@ -78,10 +78,10 @@
             this.ModificarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarButton.Image = ((System.Drawing.Image)(resources.GetObject("ModificarButton.Image")));
             this.ModificarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ModificarButton.Location = new System.Drawing.Point(200, 217);
+            this.ModificarButton.Location = new System.Drawing.Point(200, 221);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(75, 61);
-            this.ModificarButton.TabIndex = 9;
+            this.ModificarButton.TabIndex = 15;
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ModificarButton.UseVisualStyleBackColor = false;
@@ -95,10 +95,10 @@
             this.GuardarButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(116, 217);
+            this.GuardarButton.Location = new System.Drawing.Point(116, 221);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(75, 61);
-            this.GuardarButton.TabIndex = 8;
+            this.GuardarButton.TabIndex = 14;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GuardarButton.UseVisualStyleBackColor = false;
@@ -111,10 +111,10 @@
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(33, 217);
+            this.NuevoButton.Location = new System.Drawing.Point(33, 221);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 61);
-            this.NuevoButton.TabIndex = 7;
+            this.NuevoButton.TabIndex = 13;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.NuevoButton.UseVisualStyleBackColor = false;
@@ -127,12 +127,12 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(33, 72);
+            this.groupBox1.Location = new System.Drawing.Point(33, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(325, 110);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos De Categoria";
+            this.groupBox1.Text = "Datos De Presentación ";
             // 
             // BuscarButton
             // 
@@ -181,7 +181,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CategoriaId";
             // 
-            // Categoria
+            // Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,8 +194,8 @@
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.groupBox1);
             this.MinimumSize = new System.Drawing.Size(406, 346);
-            this.Name = "Categoria";
-            this.Text = "Categoria";
+            this.Name = "Presentacion";
+            this.Text = "Presentacion";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

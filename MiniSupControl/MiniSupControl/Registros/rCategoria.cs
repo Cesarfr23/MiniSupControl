@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MiniSupControl.Registros
 {
-    public partial class Cliente : Form
+    public partial class rCategoria : Form
     {
-        public Cliente()
+        public rCategoria()
         {
             InitializeComponent();
-        }
-
-        private void GuardarButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

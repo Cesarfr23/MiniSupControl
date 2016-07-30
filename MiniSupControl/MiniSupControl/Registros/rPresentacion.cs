@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MiniSupControl.Registros
 {
-    public partial class Presentacion : Form
+    public partial class rPresentacion : Form
     {
-        public Presentacion()
+        public rPresentacion()
         {
             InitializeComponent();
         }

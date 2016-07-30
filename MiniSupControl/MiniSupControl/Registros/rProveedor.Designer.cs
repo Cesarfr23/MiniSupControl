@@ -1,6 +1,6 @@
 ﻿namespace MiniSupControl.Registros
 {
-    partial class Proveedor
+    partial class rProveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rProveedor));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ProveedorButton = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();

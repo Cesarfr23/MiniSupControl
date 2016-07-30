@@ -19,25 +19,25 @@ namespace MiniSupControl
 
         private void usuarioDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registros.UsuarioSistema usuario = new Registros.UsuarioSistema();
+            Registros.rUsuarioSistema usuario = new Registros.rUsuarioSistema();
             usuario.ShowDialog();
         }
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registros.Cliente cliente = new Registros.Cliente();
+            Registros.rCliente cliente = new Registros.rCliente();
             cliente.ShowDialog();
         }
 
         private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registros.Proveedor proveedor = new Registros.Proveedor();
+            Registros.rProveedor proveedor = new Registros.rProveedor();
             proveedor.ShowDialog();
         }
 
         private void productoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registros.Productos productos = new Registros.Productos();
+            Registros.rProductos productos = new Registros.rProductos();
             productos.ShowDialog();
         }
     }

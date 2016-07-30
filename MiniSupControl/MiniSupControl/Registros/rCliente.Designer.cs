@@ -1,6 +1,6 @@
 ﻿namespace MiniSupControl.Registros
 {
-    partial class Cliente
+    partial class rCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rCliente));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DeudaTextBox = new System.Windows.Forms.TextBox();
+            this.DireccionTextBox = new System.Windows.Forms.TextBox();
+            this.ApellidoTextBox = new System.Windows.Forms.TextBox();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
+            this.ClienteIdTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,19 +47,20 @@
             this.ModificarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.TelefonoMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.TelefonoMaskedTextBox);
             this.groupBox1.Controls.Add(this.BuscarButton);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.DeudaTextBox);
+            this.groupBox1.Controls.Add(this.DireccionTextBox);
+            this.groupBox1.Controls.Add(this.ApellidoTextBox);
+            this.groupBox1.Controls.Add(this.NombreTextBox);
+            this.groupBox1.Controls.Add(this.ClienteIdTextBox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -88,48 +88,42 @@
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = false;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // textBox6
+            // DeudaTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(88, 213);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(432, 20);
-            this.textBox6.TabIndex = 11;
+            this.DeudaTextBox.Location = new System.Drawing.Point(88, 209);
+            this.DeudaTextBox.Name = "DeudaTextBox";
+            this.DeudaTextBox.Size = new System.Drawing.Size(146, 20);
+            this.DeudaTextBox.TabIndex = 10;
             // 
-            // textBox5
+            // DireccionTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(88, 177);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(432, 20);
-            this.textBox5.TabIndex = 10;
+            this.DireccionTextBox.Location = new System.Drawing.Point(88, 141);
+            this.DireccionTextBox.Name = "DireccionTextBox";
+            this.DireccionTextBox.Size = new System.Drawing.Size(432, 20);
+            this.DireccionTextBox.TabIndex = 9;
             // 
-            // textBox4
+            // ApellidoTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(88, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(432, 20);
-            this.textBox4.TabIndex = 9;
+            this.ApellidoTextBox.Location = new System.Drawing.Point(88, 105);
+            this.ApellidoTextBox.Name = "ApellidoTextBox";
+            this.ApellidoTextBox.Size = new System.Drawing.Size(432, 20);
+            this.ApellidoTextBox.TabIndex = 8;
             // 
-            // textBox3
+            // NombreTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(88, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(432, 20);
-            this.textBox3.TabIndex = 8;
+            this.NombreTextBox.Location = new System.Drawing.Point(88, 69);
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(432, 20);
+            this.NombreTextBox.TabIndex = 7;
             // 
-            // textBox2
+            // ClienteIdTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(88, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(432, 20);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(88, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(278, 20);
-            this.textBox1.TabIndex = 6;
+            this.ClienteIdTextBox.Location = new System.Drawing.Point(88, 33);
+            this.ClienteIdTextBox.Name = "ClienteIdTextBox";
+            this.ClienteIdTextBox.Size = new System.Drawing.Size(278, 20);
+            this.ClienteIdTextBox.TabIndex = 6;
             // 
             // label6
             // 
@@ -200,6 +194,7 @@
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.NuevoButton.UseVisualStyleBackColor = false;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // GuardarButton
             // 
@@ -234,6 +229,7 @@
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ModificarButton.UseVisualStyleBackColor = false;
+            this.ModificarButton.Click += new System.EventHandler(this.ModificarButton_Click);
             // 
             // EliminarButton
             // 
@@ -250,6 +246,7 @@
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.EliminarButton.UseVisualStyleBackColor = false;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // label7
             // 
@@ -262,7 +259,15 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Cliente";
             // 
-            // Cliente
+            // TelefonoMaskedTextBox
+            // 
+            this.TelefonoMaskedTextBox.Location = new System.Drawing.Point(88, 177);
+            this.TelefonoMaskedTextBox.Mask = "000-000-0000";
+            this.TelefonoMaskedTextBox.Name = "TelefonoMaskedTextBox";
+            this.TelefonoMaskedTextBox.Size = new System.Drawing.Size(75, 20);
+            this.TelefonoMaskedTextBox.TabIndex = 13;
+            // 
+            // rCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -275,7 +280,7 @@
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.groupBox1);
             this.MinimumSize = new System.Drawing.Size(642, 458);
-            this.Name = "Cliente";
+            this.Name = "rCliente";
             this.Text = "Cliente";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -288,12 +293,11 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DeudaTextBox;
+        private System.Windows.Forms.TextBox DireccionTextBox;
+        private System.Windows.Forms.TextBox ApellidoTextBox;
+        private System.Windows.Forms.TextBox NombreTextBox;
+        private System.Windows.Forms.TextBox ClienteIdTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -305,5 +309,6 @@
         private System.Windows.Forms.Button ModificarButton;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.MaskedTextBox TelefonoMaskedTextBox;
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MiniSupControl.Registros
 {
-    public partial class UsuarioSistema : Form
+    public partial class rProductos : Form
     {
-        public UsuarioSistema()
+        public rProductos()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
