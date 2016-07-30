@@ -50,12 +50,16 @@ namespace BLL
 
         }
 
-        public static void Modificar(int ClienteId, string nombre)
+        public static void Modificar(int ClienteId, string nombre, string apellido, string direccion, string telefono, int deuda)
         {
             using (var db = new MiniSubControlDb())
             {
                 var cliente = db.Cliente.Find(ClienteId);
                 cliente.Nombre = nombre;
+                cliente.Apellido = apellido;
+                cliente.Direccion = direccion;
+                cliente.Telefono = telefono;
+                cliente.Deuda = deuda;
                 db.SaveChanges();
             }
         }
