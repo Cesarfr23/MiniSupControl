@@ -73,7 +73,6 @@ namespace BLL
             lista = db.Cliente.ToList();
 
             return lista;
-
         }
     }
 }
