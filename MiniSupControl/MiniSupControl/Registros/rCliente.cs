@@ -22,7 +22,29 @@ namespace MiniSupControl.Registros
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            LlenaCampos(ClienteBll.Buscar(StringToInt(ClienteIdTextBox.Text)));
+            int Id = 0;
+            try
+            {
+                if (!ClienteIdTextBox.Text.Equals(""))
+                {
+                    Id = StringToInt(ClienteIdTextBox.Text);
+                    if(cliente.Equals(Id))
+                    {
+                        LlenaCampos(ClienteBll.Buscar(StringToInt(ClienteIdTextBox.Text)));
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Id:" + ClienteIdTextBox.Text + "No Existe");
+                    }
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+              
+            
         }
 
         private void Limpiar()
@@ -31,7 +53,7 @@ namespace MiniSupControl.Registros
             NombreTextBox.Clear();
             ApellidoTextBox.Clear();
             DireccionTextBox.Clear();
-            DeudaTextBox.Clear();
+            TelefonoMaskedTextBox.Clear();
             DeudaTextBox.Clear();
         }
 
@@ -51,7 +73,7 @@ namespace MiniSupControl.Registros
             cliente.Nombre = NombreTextBox.Text;
             cliente.Apellido = ApellidoTextBox.Text;
             cliente.Direccion = DireccionTextBox.Text;
-            cliente.Telefono = DeudaTextBox.Text;
+            cliente.Telefono = TelefonoMaskedTextBox.Text;
             cliente.Deuda = StringToInt(DeudaTextBox.Text);
         }
 
@@ -84,7 +106,6 @@ namespace MiniSupControl.Registros
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
-            Limpiar();
             ClienteBll.Eliminar(StringToInt(ClienteIdTextBox.Text));
         }
     }
