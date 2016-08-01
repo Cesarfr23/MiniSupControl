@@ -32,7 +32,6 @@ namespace MiniSupControl
         {
 
             MiniSupControl miniSupControl = new MiniSupControl();
-            int id = Convert.ToInt32(UsuarioTextBox.Text);
             var db = new Usuario();
            
             if (db!= null)

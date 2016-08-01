@@ -325,6 +325,7 @@
     <Content Include="Resources\empleados_b.png" />
     <Content Include="Resources\Exit_delete_close_remove_door_logout_out.png" />
     <Content Include="Resources\Guardar.png" />
+    <Content Include="Resources\IconoProyecto.png" />
     <Content Include="Resources\Icono_encuesta.png" />
     <Content Include="Resources\Info-32.png" />
     <Content Include="Resources\LogoProyectoLogin.jpg" />

@@ -49,15 +49,15 @@
             this.EliminarButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.Categorias = new System.Windows.Forms.GroupBox();
-            this.CategoriaDataGridView = new System.Windows.Forms.DataGridView();
-            this.CategoriaIdComboBox = new System.Windows.Forms.ComboBox();
+            this.Agregar1Button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.CategoriaIdComboBox = new System.Windows.Forms.ComboBox();
+            this.CategoriaDataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.AgregarButton = new System.Windows.Forms.Button();
+            this.PresentacionIdComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.PresentacionDataGridView = new System.Windows.Forms.DataGridView();
-            this.PresentacionIdComboBox = new System.Windows.Forms.ComboBox();
-            this.Agregar1Button = new System.Windows.Forms.Button();
-            this.AgregarButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.Categorias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoriaDataGridView)).BeginInit();
@@ -296,13 +296,30 @@
             this.Categorias.TabStop = false;
             this.Categorias.Text = "Categorias";
             // 
-            // CategoriaDataGridView
+            // Agregar1Button
             // 
-            this.CategoriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CategoriaDataGridView.Location = new System.Drawing.Point(6, 70);
-            this.CategoriaDataGridView.Name = "CategoriaDataGridView";
-            this.CategoriaDataGridView.Size = new System.Drawing.Size(303, 124);
-            this.CategoriaDataGridView.TabIndex = 0;
+            this.Agregar1Button.BackColor = System.Drawing.Color.White;
+            this.Agregar1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Agregar1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Agregar1Button.Image = ((System.Drawing.Image)(resources.GetObject("Agregar1Button.Image")));
+            this.Agregar1Button.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Agregar1Button.Location = new System.Drawing.Point(248, 19);
+            this.Agregar1Button.Name = "Agregar1Button";
+            this.Agregar1Button.Size = new System.Drawing.Size(61, 45);
+            this.Agregar1Button.TabIndex = 18;
+            this.Agregar1Button.Text = "Agregar";
+            this.Agregar1Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Agregar1Button.UseVisualStyleBackColor = false;
+            this.Agregar1Button.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Categoria";
             // 
             // CategoriaIdComboBox
             // 
@@ -313,14 +330,14 @@
             this.CategoriaIdComboBox.Size = new System.Drawing.Size(162, 21);
             this.CategoriaIdComboBox.TabIndex = 16;
             // 
-            // label8
+            // CategoriaDataGridView
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Categoria";
+            this.CategoriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CategoriaDataGridView.Location = new System.Drawing.Point(6, 70);
+            this.CategoriaDataGridView.Name = "CategoriaDataGridView";
+            this.CategoriaDataGridView.Size = new System.Drawing.Size(303, 124);
+            this.CategoriaDataGridView.TabIndex = 0;
+            this.CategoriaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CategoriaDataGridView_CellContentClick);
             // 
             // groupBox2
             // 
@@ -335,6 +352,30 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Presentacion";
+            // 
+            // AgregarButton
+            // 
+            this.AgregarButton.BackColor = System.Drawing.Color.White;
+            this.AgregarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AgregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
+            this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.AgregarButton.Location = new System.Drawing.Point(245, 19);
+            this.AgregarButton.Name = "AgregarButton";
+            this.AgregarButton.Size = new System.Drawing.Size(62, 45);
+            this.AgregarButton.TabIndex = 19;
+            this.AgregarButton.Text = "Agregar";
+            this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AgregarButton.UseVisualStyleBackColor = false;
+            // 
+            // PresentacionIdComboBox
+            // 
+            this.PresentacionIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PresentacionIdComboBox.FormattingEnabled = true;
+            this.PresentacionIdComboBox.Location = new System.Drawing.Point(97, 24);
+            this.PresentacionIdComboBox.Name = "PresentacionIdComboBox";
+            this.PresentacionIdComboBox.Size = new System.Drawing.Size(142, 21);
+            this.PresentacionIdComboBox.TabIndex = 18;
             // 
             // label9
             // 
@@ -352,46 +393,6 @@
             this.PresentacionDataGridView.Name = "PresentacionDataGridView";
             this.PresentacionDataGridView.Size = new System.Drawing.Size(301, 124);
             this.PresentacionDataGridView.TabIndex = 0;
-            // 
-            // PresentacionIdComboBox
-            // 
-            this.PresentacionIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PresentacionIdComboBox.FormattingEnabled = true;
-            this.PresentacionIdComboBox.Location = new System.Drawing.Point(97, 24);
-            this.PresentacionIdComboBox.Name = "PresentacionIdComboBox";
-            this.PresentacionIdComboBox.Size = new System.Drawing.Size(142, 21);
-            this.PresentacionIdComboBox.TabIndex = 18;
-            // 
-            // Agregar1Button
-            // 
-            this.Agregar1Button.BackColor = System.Drawing.Color.White;
-            this.Agregar1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Agregar1Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Agregar1Button.Image = ((System.Drawing.Image)(resources.GetObject("Agregar1Button.Image")));
-            this.Agregar1Button.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Agregar1Button.Location = new System.Drawing.Point(248, 19);
-            this.Agregar1Button.Name = "Agregar1Button";
-            this.Agregar1Button.Size = new System.Drawing.Size(61, 45);
-            this.Agregar1Button.TabIndex = 18;
-            this.Agregar1Button.Text = "Agregar";
-            this.Agregar1Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Agregar1Button.UseVisualStyleBackColor = false;
-            this.Agregar1Button.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // AgregarButton
-            // 
-            this.AgregarButton.BackColor = System.Drawing.Color.White;
-            this.AgregarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AgregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
-            this.AgregarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.AgregarButton.Location = new System.Drawing.Point(245, 19);
-            this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(62, 45);
-            this.AgregarButton.TabIndex = 19;
-            this.AgregarButton.Text = "Agregar";
-            this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.AgregarButton.UseVisualStyleBackColor = false;
             // 
             // rProductos
             // 

@@ -83,7 +83,7 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private MiniSubControlDbDataSet miniSubControlDbDataSet;
-        private System.Windows.Forms.BindingSource miniSubControlDbDataSetBindingSource;
+        private System.Windows.Forms.BindingSource MiniSubControlDbDataSetBindingSource;
         private System.Windows.Forms.BindingSource ClientesBindingSource;
         private MiniSubControlDbDataSet MiniSubControlDbDataSet;
         private MiniSubControlDbDataSetTableAdapters.ClientesTableAdapter ClientesTableAdapter;

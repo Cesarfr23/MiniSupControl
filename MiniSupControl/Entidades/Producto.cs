@@ -17,7 +17,7 @@ namespace Entidades
         public int CategoriaId { get; set; }
         public int PresentacionId { get; set; }
 
-        public virtual Categoria Categoria { get; set; }
+        public virtual List<Entidades.Categoria> Categoria { get; set; }
         public virtual Presentacion Presentacion { get; set; }
     }
 }

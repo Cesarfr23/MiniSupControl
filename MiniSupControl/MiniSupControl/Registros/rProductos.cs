@@ -98,12 +98,17 @@ namespace MiniSupControl.Registros
             ProductoBll.Modificar(StringToInt(ProductoIdTextBox.Text), NombreTextBox.Text, DescripcionTextBox.Text,
                 StringToInt(CantidadTextBox.Text), StringToInt(CategoriaComboBox.Text), StringToInt(PresentacionComboBox.Text));
         }
+        private void CategoriaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
         private void button1_Click_1(object sender, EventArgs e)
         {
             producto.Categoria.Add(new Categoria((int)CategoriaIdComboBox.SelectedValue, CategoriaIdComboBox.Text));
             CategoriaDataGridView.AutoGenerateColumns = false;
             CategoriaDataGridView.DataSource = producto.Categoria;
         }
+
+        
     }
 }
