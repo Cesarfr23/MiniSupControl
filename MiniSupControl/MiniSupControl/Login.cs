@@ -31,8 +31,17 @@ namespace MiniSupControl
         private void AceptarButton_Click(object sender, EventArgs e)
         {
 
-                MiniSupControl miniSupControl = new MiniSupControl();
+            MiniSupControl miniSupControl = new MiniSupControl();
+            int id = Convert.ToInt32(UsuarioTextBox.Text);
+            var db = new Usuario();
+           
+            if (db!= null)
+            {
                 miniSupControl.Show();
+            }
+            else
+                MessageBox.Show("Usuario Invalido");
+            
                 this.Hide();
         }
 

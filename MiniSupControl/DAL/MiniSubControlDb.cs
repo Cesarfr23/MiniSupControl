@@ -29,7 +29,7 @@ namespace DAL
         {
             modelBuilder.Entity<Producto>()
                .HasMany<Categoria>(c => c.Categoria)
-               .WithMany(p => p.Producto)
+               .WithMany(p => p.Prpdocto)
                .Map(pa =>
                {
                    pa.MapLeftKey("ProductoId");
