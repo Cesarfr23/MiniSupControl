@@ -12,21 +12,16 @@ using System.Windows.Forms;
 
 namespace MiniSupControl.Consultas
 {
-    public partial class ConsultarCategorias : Form
+    public partial class ConsultarUsuarios : Form
     {
-        public ConsultarCategorias()
+        public ConsultarUsuarios()
         {
             InitializeComponent();
         }
 
-        private void ConsultarCategorias_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            CategoriaDataGridView.DataSource = CategoriaBll.GetLista();
+            UsuarioDataGridView.DataSource = UsuarioBll.GetLista();
         }
 
         private void ImprimirButton_Click(object sender, EventArgs e)
@@ -35,31 +30,16 @@ namespace MiniSupControl.Consultas
             viewer.reportViewer1.Reset();
             viewer.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
 
-            viewer.reportViewer1.LocalReport.ReportPath = @"Reportes\ListadoCategorias.rdlc";
+            viewer.reportViewer1.LocalReport.ReportPath = @"Reportes\Listado_Usuarios.rdlc";
 
             viewer.reportViewer1.LocalReport.DataSources.Clear();
 
             viewer.reportViewer1.LocalReport.DataSources.Add(
-                new ReportDataSource("Categorias",
-                CategoriaBll.GetLista()));
+                new ReportDataSource("Usuario",
+                UsuarioBll.GetLista()));
 
             viewer.reportViewer1.LocalReport.Refresh();
             viewer.Show();
-        }
-
-        private void FiltrarTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CategoriaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

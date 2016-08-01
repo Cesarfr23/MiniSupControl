@@ -128,5 +128,35 @@ namespace MiniSupControl
             Consultas.ConsultarCategorias consultarCategoria = new Consultas.ConsultarCategorias();
             consultarCategoria.ShowDialog();
         }
+
+        private void usuariosDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultarUsuarios consultaUsuario = new Consultas.ConsultarUsuarios();
+            consultaUsuario.ShowDialog();
+        }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultarClientes consultaClientes = new Consultas.ConsultarClientes();
+            consultaClientes.ShowDialog();
+        }
+
+        private void proveedorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultarProveedor consultaProveedor = new Consultas.ConsultarProveedor();
+            consultaProveedor.ShowDialog();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaProductos consultaProductos = new Consultas.ConsultaProductos();
+            consultaProductos.ShowDialog();
+        }
+
+        private void presentacionToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultarPresentacion consultaPresentacion = new Consultas.ConsultarPresentacion();
+            consultaPresentacion.ShowDialog();
+        }
     }
 }

@@ -58,11 +58,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\ConsultaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaProductos.Designer.cs">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ConsultarCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultas\ConsultarCategorias.Designer.cs">
       <DependentUpon>ConsultarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultarClientes.Designer.cs">
+      <DependentUpon>ConsultarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultarPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultarPresentacion.Designer.cs">
+      <DependentUpon>ConsultarPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultarProveedor.Designer.cs">
+      <DependentUpon>ConsultarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultarUsuarios.Designer.cs">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultas\ReportingViewer.cs">
       <SubType>Form</SubType>
@@ -161,8 +191,23 @@
     <Compile Include="ReporteUsuarios.Designer.cs">
       <DependentUpon>ReporteUsuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Consultas\ConsultaProductos.resx">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultarCategorias.resx">
       <DependentUpon>ConsultarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultarClientes.resx">
+      <DependentUpon>ConsultarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultarPresentacion.resx">
+      <DependentUpon>ConsultarPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultarProveedor.resx">
+      <DependentUpon>ConsultarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultarUsuarios.resx">
+      <DependentUpon>ConsultarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ReportingViewer.resx">
       <DependentUpon>ReportingViewer.cs</DependentUpon>
@@ -267,6 +312,7 @@
     <Content Include="Resources\1453541260_search.png" />
     <Content Include="Resources\1455135756_Card_file.png" />
     <Content Include="Resources\1458766531_Key.png" />
+    <Content Include="Resources\1458844922_folder_print2.png" />
     <Content Include="Resources\Buscar.png" />
     <Content Include="Resources\Capture3.PNG" />
     <Content Include="Resources\Eliminar..png" />

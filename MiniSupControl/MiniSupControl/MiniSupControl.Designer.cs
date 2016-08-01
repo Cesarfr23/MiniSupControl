@@ -171,24 +171,28 @@
             this.usuariosDelSistemaToolStripMenuItem.Name = "usuariosDelSistemaToolStripMenuItem";
             this.usuariosDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.usuariosDelSistemaToolStripMenuItem.Text = "Usuarios del Sistema";
+            this.usuariosDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.usuariosDelSistemaToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
             this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
             this.clienteToolStripMenuItem1.Text = "Cliente";
+            this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
             // proveedorToolStripMenuItem1
             // 
             this.proveedorToolStripMenuItem1.Name = "proveedorToolStripMenuItem1";
             this.proveedorToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
             this.proveedorToolStripMenuItem1.Text = "Proveedor";
+            this.proveedorToolStripMenuItem1.Click += new System.EventHandler(this.proveedorToolStripMenuItem1_Click);
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.productosToolStripMenuItem.Text = "Productos";
+            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -269,6 +273,7 @@
             this.presentacionToolStripMenuItem2.Name = "presentacionToolStripMenuItem2";
             this.presentacionToolStripMenuItem2.Size = new System.Drawing.Size(182, 22);
             this.presentacionToolStripMenuItem2.Text = "Presentacion";
+            this.presentacionToolStripMenuItem2.Click += new System.EventHandler(this.presentacionToolStripMenuItem2_Click);
             // 
             // MiniSupControl
             // 
