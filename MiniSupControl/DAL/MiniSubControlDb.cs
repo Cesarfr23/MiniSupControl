@@ -25,5 +25,21 @@ namespace DAL
         public virtual DbSet<Usuario> Usuario { set; get; }
         public virtual DbSet<venta> venta { get; set; }
 
-}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Producto>()
+               .HasMany<Categoria>(c => c.Categoria)
+               .WithMany(p => p.Producto)
+               .Map(pa =>
+               {
+                   pa.MapLeftKey("ProductoId");
+                   pa.MapRightKey("CategoriaId");
+                   pa.ToTable("Producto");
+               });
+
+
+
+        }
+
+    }
 }
