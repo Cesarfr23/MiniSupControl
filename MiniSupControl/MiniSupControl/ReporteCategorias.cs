@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MiniSupControl.Reportes
+namespace MiniSupControl
 {
     public partial class ReporteCategorias : Form
     {
+
         public ReporteCategorias()
         {
             InitializeComponent();
@@ -19,8 +20,10 @@ namespace MiniSupControl.Reportes
 
         private void ReporteCategorias_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'MiniSubControlDbDataSet.Categorias' table. You can move, or remove it, as needed.
+            this.CategoriasTableAdapter.Fill(this.MiniSubControlDbDataSet.Categorias);
 
-            this.reportViewer1.RefreshReport();
+            this.CategoriaReportViewer.RefreshReport();
         }
     }
 }

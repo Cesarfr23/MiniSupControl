@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MiniSupControl.Reportes
+namespace MiniSupControl.Consultas
 {
-    public partial class ReporteUsuarios : Form
+    public partial class ReportingViewer : Form
     {
-        public ReporteUsuarios()
+        public ReportingViewer()
         {
             InitializeComponent();
         }
 
-        private void ReporteUsuarios_Load(object sender, EventArgs e)
+        private void ReportingViewer_Load(object sender, EventArgs e)
         {
 
             this.reportViewer1.RefreshReport();

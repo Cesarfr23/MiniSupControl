@@ -89,38 +89,44 @@ namespace MiniSupControl
 
         private void categoriaToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-            Reportes.ReporteCategorias reporteCategorias = new Reportes.ReporteCategorias();
+            ReporteCategorias reporteCategorias = new ReporteCategorias();
             reporteCategorias.ShowDialog();
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Reportes.ReporteClientes reporteClientes = new Reportes.ReporteClientes();
+            ReporteClientes reporteClientes = new ReporteClientes();
             reporteClientes.ShowDialog();
         }
 
         private void usuariosDelSistemaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Reportes.ReporteUsuarios reporteUsuarios = new Reportes.ReporteUsuarios();
+            ReporteUsuarios reporteUsuarios = new ReporteUsuarios();
             reporteUsuarios.ShowDialog();
         }
 
         private void proveedorToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Reportes.ReporteProveedores reporteProveedores = new Reportes.ReporteProveedores();
+            ReporteProveedores reporteProveedores = new ReporteProveedores();
             reporteProveedores.ShowDialog();
         }
 
         private void productoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Reportes.ReorteProductos reporteProductos = new Reportes.ReorteProductos();
+            ReporteProductos reporteProductos = new ReporteProductos();
             reporteProductos.ShowDialog();
         }
 
         private void presentacionToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
-            Reportes.Reporte_Presentacion reportePresentacion = new Reportes.Reporte_Presentacion();
+            ReportesPresentacion reportePresentacion = new ReportesPresentacion();
             reportePresentacion.ShowDialog();
+        }
+
+        private void categoriaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultarCategorias consultarCategoria = new Consultas.ConsultarCategorias();
+            consultarCategoria.ShowDialog();
         }
     }
 }

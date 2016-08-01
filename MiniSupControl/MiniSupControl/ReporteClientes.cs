@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MiniSupControl.Reportes
+namespace MiniSupControl
 {
     public partial class ReporteClientes : Form
     {
@@ -19,6 +19,9 @@ namespace MiniSupControl.Reportes
 
         private void ReporteClientes_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'MiniSubControlDbDataSet.Clientes' table. You can move, or remove it, as needed.
+            this.ClientesTableAdapter.Fill(this.MiniSubControlDbDataSet.Clientes);
+
             this.reportViewer1.RefreshReport();
         }
     }

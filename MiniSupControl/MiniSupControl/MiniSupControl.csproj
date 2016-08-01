@@ -58,14 +58,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\ConsultarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultarCategorias.Designer.cs">
+      <DependentUpon>ConsultarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ReportingViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ReportingViewer.Designer.cs">
+      <DependentUpon>ReportingViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MiniSubControlDbDataSet.cs">
-      <DependentUpon>MiniSubControlDbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="MiniSubControlDbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -116,42 +125,48 @@
     <Compile Include="Registros\rUsuarioSistema.Designer.cs">
       <DependentUpon>rUsuarioSistema.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReorteProductos.cs">
+    <Compile Include="ReporteCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReorteProductos.Designer.cs">
-      <DependentUpon>ReorteProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reportes\ReporteCategorias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\ReporteCategorias.Designer.cs">
+    <Compile Include="ReporteCategorias.Designer.cs">
       <DependentUpon>ReporteCategorias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteClientes.cs">
+    <Compile Include="ReporteClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReporteClientes.Designer.cs">
+    <Compile Include="ReporteClientes.Designer.cs">
       <DependentUpon>ReporteClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteProveedores.cs">
+    <Compile Include="ReporteProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReporteProveedores.Designer.cs">
+    <Compile Include="ReporteProductos.Designer.cs">
+      <DependentUpon>ReporteProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteProveedores.Designer.cs">
       <DependentUpon>ReporteProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteUsuarios.cs">
+    <Compile Include="ReportesPresentacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\ReporteUsuarios.Designer.cs">
+    <Compile Include="ReportesPresentacion.Designer.cs">
+      <DependentUpon>ReportesPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteUsuarios.Designer.cs">
       <DependentUpon>ReporteUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\Reporte_Presentacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reportes\Reporte_Presentacion.Designer.cs">
-      <DependentUpon>Reporte_Presentacion.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Consultas\ConsultarCategorias.resx">
+      <DependentUpon>ConsultarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ReportingViewer.resx">
+      <DependentUpon>ReportingViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,29 +200,29 @@
     <EmbeddedResource Include="Registros\rUsuarioSistema.resx">
       <DependentUpon>rUsuarioSistema.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCategorias.resx">
+      <DependentUpon>ReporteCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteClientes.resx">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteProductos.resx">
+      <DependentUpon>ReporteProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteProveedores.resx">
+      <DependentUpon>ReporteProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesPresentacion.resx">
+      <DependentUpon>ReportesPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Listado_Clientes.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Categorias.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Presentacion.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Productos.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Proveedores.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Usuarios.rdlc" />
-    <EmbeddedResource Include="Reportes\ReorteProductos.resx">
-      <DependentUpon>ReorteProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteCategorias.resx">
-      <DependentUpon>ReporteCategorias.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteClientes.resx">
-      <DependentUpon>ReporteClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteProveedores.resx">
-      <DependentUpon>ReporteProveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteUsuarios.resx">
+    <EmbeddedResource Include="ReporteUsuarios.resx">
       <DependentUpon>ReporteUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reporte_Presentacion.resx">
-      <DependentUpon>Reporte_Presentacion.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="MiniSubControlDbDataSet.xsc">
@@ -265,6 +280,7 @@
     <Content Include="Resources\Modificar.png" />
     <Content Include="Resources\Nuevo..png" />
     <Content Include="Resources\Nuevo.png" />
+    <Content Include="Resources\Principal.png" />
     <Content Include="Resources\ProyectoFondoOriginal.jpg" />
     <Content Include="Resources\Reportes.png" />
   </ItemGroup>

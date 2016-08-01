@@ -1,6 +1,6 @@
-﻿namespace MiniSupControl.Reportes
+﻿namespace MiniSupControl.Consultas
 {
-    partial class ReporteProveedores
+    partial class ReportingViewer
     {
         /// <summary>
         /// Required designer variable.
@@ -34,27 +34,26 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "MiniSupControl.Reportes.Listado_Proveedores.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(654, 465);
+            this.reportViewer1.Size = new System.Drawing.Size(667, 460);
             this.reportViewer1.TabIndex = 0;
             // 
-            // ReporteProveedores
+            // ReportingViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 465);
+            this.ClientSize = new System.Drawing.Size(667, 460);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "ReporteProveedores";
-            this.Text = "ReporteProveedores";
-            this.Load += new System.EventHandler(this.ReporteProveedores_Load);
+            this.Name = "ReportingViewer";
+            this.Text = "ReportingViewer";
+            this.Load += new System.EventHandler(this.ReportingViewer_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        public Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }
