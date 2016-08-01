@@ -15,7 +15,6 @@ namespace Entidades
         public string Apellido {get; set;}
         public string Sexo {get; set;}
         public string Fecha_Nacimiento {get; set;}
-        public string Telefono {get; set;}
         public string Correo {get; set;}
         public string Acceso {get; set;}
         public string UseName {get; set;}

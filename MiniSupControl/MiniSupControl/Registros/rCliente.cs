@@ -22,29 +22,14 @@ namespace MiniSupControl.Registros
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            int Id = 0;
             try
             {
-                if (!ClienteIdTextBox.Text.Equals(""))
-                {
-                    Id = StringToInt(ClienteIdTextBox.Text);
-                    if(cliente.Equals(Id))
-                    {
-                        LlenaCampos(ClienteBll.Buscar(StringToInt(ClienteIdTextBox.Text)));
-                    }
-                    else
-                    {
-                        MessageBox.Show("El Id:" + ClienteIdTextBox.Text + "No Existe");
-                    }
-                }
-                
+               LlenaCampos(ClienteBll.Buscar(StringToInt(ClienteIdTextBox.Text)));
             }
             catch(Exception ex)
             {
-                throw ex;
+                MessageBox.Show(ex.Message);
             }
-              
-            
         }
 
         private void Limpiar()
@@ -107,6 +92,7 @@ namespace MiniSupControl.Registros
         private void EliminarButton_Click(object sender, EventArgs e)
         {
             ClienteBll.Eliminar(StringToInt(ClienteIdTextBox.Text));
+            Limpiar();
         }
     }
 }

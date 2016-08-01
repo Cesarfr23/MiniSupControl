@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +18,27 @@ namespace MiniSupControl
         {
             InitializeComponent();
         }
+        
+        public int StringToInt(string texto)
+        {
+            int numero = 0;
+
+            int.TryParse(texto, out numero);
+
+            return numero;
+        }
 
         private void AceptarButton_Click(object sender, EventArgs e)
         {
-            MiniSupControl miniSupControl = new MiniSupControl();
-            miniSupControl.Show();
+
+                MiniSupControl miniSupControl = new MiniSupControl();
+                miniSupControl.Show();
+                this.Hide();
+        }
+
+        private void CancelarButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -102,6 +102,7 @@
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelarButton.UseVisualStyleBackColor = false;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // AceptarButton
             // 

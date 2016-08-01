@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,12 +51,19 @@ namespace BLL
 
         }
 
-        public static void Modificar(int UsuarioId, string nombre)
+        public static void Modificar(int UsuarioId, string nombre, string apellido, string sexo, string fecha, string correo, string acceso, string usuario, string clave, string conficlave)
         {
             using (var db = new MiniSubControlDb())
             {
-                var usuario = db.Usuario.Find(UsuarioId);
-                usuario.Nombre = nombre;
+                var usuarios = db.Usuario.Find(UsuarioId);
+                usuarios.Nombre = nombre;
+                usuarios.Apellido = apellido;
+                usuarios.Sexo = sexo;
+                usuarios.Fecha_Nacimiento = fecha;
+                usuarios.Correo = correo;
+                usuarios.UseName = usuario;
+                usuarios.Clave = clave;
+                usuarios.ConfirmarClave = conficlave;
                 db.SaveChanges();
             }
         }

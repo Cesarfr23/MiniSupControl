@@ -50,12 +50,16 @@ namespace BLL
 
         }
 
-        public static void Modificar(int ProductoId, string nombre)
+        public static void Modificar(int ProductoId, string nombre, string descripcion, int cantidad, int categoria, int presentacion)
         {
             using (var db = new MiniSubControlDb())
             {
                 var producto = db.Producto.Find(ProductoId);
                 producto.Nombre = nombre;
+                producto.Descripcion = descripcion;
+                producto.Cantidad = cantidad;
+                producto.CategoriaId = categoria;
+                producto.PresentacionId = presentacion;
                 db.SaveChanges();
             }
         }

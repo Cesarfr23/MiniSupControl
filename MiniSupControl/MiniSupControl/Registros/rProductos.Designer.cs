@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rProductos));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.PresentacionComboBox = new System.Windows.Forms.ComboBox();
+            this.CategoriaComboBox = new System.Windows.Forms.ComboBox();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CantidadTextBox = new System.Windows.Forms.TextBox();
+            this.DescripcionTextBox = new System.Windows.Forms.TextBox();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
+            this.ProductoIdTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,20 +48,18 @@
             this.ModificarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.PresentacionComboBox);
+            this.groupBox1.Controls.Add(this.CategoriaComboBox);
             this.groupBox1.Controls.Add(this.BuscarButton);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.CantidadTextBox);
+            this.groupBox1.Controls.Add(this.DescripcionTextBox);
+            this.groupBox1.Controls.Add(this.NombreTextBox);
+            this.groupBox1.Controls.Add(this.ProductoIdTextBox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -72,6 +72,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Del Producto";
+            // 
+            // PresentacionComboBox
+            // 
+            this.PresentacionComboBox.FormattingEnabled = true;
+            this.PresentacionComboBox.Location = new System.Drawing.Point(113, 217);
+            this.PresentacionComboBox.Name = "PresentacionComboBox";
+            this.PresentacionComboBox.Size = new System.Drawing.Size(377, 21);
+            this.PresentacionComboBox.TabIndex = 16;
+            // 
+            // CategoriaComboBox
+            // 
+            this.CategoriaComboBox.FormattingEnabled = true;
+            this.CategoriaComboBox.Location = new System.Drawing.Point(113, 181);
+            this.CategoriaComboBox.Name = "CategoriaComboBox";
+            this.CategoriaComboBox.Size = new System.Drawing.Size(377, 21);
+            this.CategoriaComboBox.TabIndex = 15;
             // 
             // BuscarButton
             // 
@@ -90,33 +106,33 @@
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox4
+            // CantidadTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(113, 145);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(377, 20);
-            this.textBox4.TabIndex = 10;
+            this.CantidadTextBox.Location = new System.Drawing.Point(113, 145);
+            this.CantidadTextBox.Name = "CantidadTextBox";
+            this.CantidadTextBox.Size = new System.Drawing.Size(377, 20);
+            this.CantidadTextBox.TabIndex = 10;
             // 
-            // textBox3
+            // DescripcionTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 109);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(377, 20);
-            this.textBox3.TabIndex = 9;
+            this.DescripcionTextBox.Location = new System.Drawing.Point(113, 109);
+            this.DescripcionTextBox.Name = "DescripcionTextBox";
+            this.DescripcionTextBox.Size = new System.Drawing.Size(377, 20);
+            this.DescripcionTextBox.TabIndex = 9;
             // 
-            // textBox2
+            // NombreTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(377, 20);
-            this.textBox2.TabIndex = 8;
+            this.NombreTextBox.Location = new System.Drawing.Point(113, 73);
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(377, 20);
+            this.NombreTextBox.TabIndex = 8;
             // 
-            // textBox1
+            // ProductoIdTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 20);
-            this.textBox1.TabIndex = 7;
+            this.ProductoIdTextBox.Location = new System.Drawing.Point(113, 37);
+            this.ProductoIdTextBox.Name = "ProductoIdTextBox";
+            this.ProductoIdTextBox.Size = new System.Drawing.Size(237, 20);
+            this.ProductoIdTextBox.TabIndex = 7;
             // 
             // label6
             // 
@@ -186,6 +202,7 @@
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.NuevoButton.UseVisualStyleBackColor = false;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // GuardarButton
             // 
@@ -201,6 +218,7 @@
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GuardarButton.UseVisualStyleBackColor = false;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // ModificarButton
             // 
@@ -216,6 +234,7 @@
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ModificarButton.UseVisualStyleBackColor = false;
+            this.ModificarButton.Click += new System.EventHandler(this.ModificarButton_Click);
             // 
             // EliminarButton
             // 
@@ -242,23 +261,7 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Producto";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(113, 181);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(113, 217);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 16;
-            // 
-            // Productos
+            // rProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -270,8 +273,9 @@
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Productos";
+            this.Name = "rProductos";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.rProductos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -289,16 +293,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CantidadTextBox;
+        private System.Windows.Forms.TextBox DescripcionTextBox;
+        private System.Windows.Forms.TextBox NombreTextBox;
+        private System.Windows.Forms.TextBox ProductoIdTextBox;
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button ModificarButton;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PresentacionComboBox;
+        private System.Windows.Forms.ComboBox CategoriaComboBox;
     }
 }

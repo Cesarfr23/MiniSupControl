@@ -36,8 +36,8 @@
             this.NuevoButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DescripcionTextBox = new System.Windows.Forms.TextBox();
+            this.PresentacionIdTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -69,6 +69,7 @@
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.EliminarButton.UseVisualStyleBackColor = false;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // ModificarButton
             // 
@@ -85,6 +86,7 @@
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ModificarButton.UseVisualStyleBackColor = false;
+            this.ModificarButton.Click += new System.EventHandler(this.ModificarButton_Click);
             // 
             // GuardarButton
             // 
@@ -102,6 +104,7 @@
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GuardarButton.UseVisualStyleBackColor = false;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // NuevoButton
             // 
@@ -118,13 +121,14 @@
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.NuevoButton.UseVisualStyleBackColor = false;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.BuscarButton);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.DescripcionTextBox);
+            this.groupBox1.Controls.Add(this.PresentacionIdTextBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(33, 76);
@@ -148,20 +152,21 @@
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BuscarButton.UseVisualStyleBackColor = false;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // textBox2
+            // DescripcionTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(88, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 20);
-            this.textBox2.TabIndex = 7;
+            this.DescripcionTextBox.Location = new System.Drawing.Point(107, 69);
+            this.DescripcionTextBox.Name = "DescripcionTextBox";
+            this.DescripcionTextBox.Size = new System.Drawing.Size(197, 20);
+            this.DescripcionTextBox.TabIndex = 7;
             // 
-            // textBox1
+            // PresentacionIdTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 20);
-            this.textBox1.TabIndex = 6;
+            this.PresentacionIdTextBox.Location = new System.Drawing.Point(107, 33);
+            this.PresentacionIdTextBox.Name = "PresentacionIdTextBox";
+            this.PresentacionIdTextBox.Size = new System.Drawing.Size(91, 20);
+            this.PresentacionIdTextBox.TabIndex = 6;
             // 
             // label2
             // 
@@ -177,11 +182,11 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(23, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CategoriaId";
+            this.label1.Text = "PresentacionId";
             // 
-            // Presentacion
+            // rPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,7 +199,7 @@
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.groupBox1);
             this.MinimumSize = new System.Drawing.Size(406, 346);
-            this.Name = "Presentacion";
+            this.Name = "rPresentacion";
             this.Text = "Presentacion";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -212,8 +217,8 @@
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DescripcionTextBox;
+        private System.Windows.Forms.TextBox PresentacionIdTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }
