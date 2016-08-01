@@ -41,9 +41,12 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -113,6 +116,42 @@
     <Compile Include="Registros\rUsuarioSistema.Designer.cs">
       <DependentUpon>rUsuarioSistema.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReorteProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReorteProductos.Designer.cs">
+      <DependentUpon>ReorteProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteCategorias.Designer.cs">
+      <DependentUpon>ReporteCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteClientes.Designer.cs">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteProveedores.Designer.cs">
+      <DependentUpon>ReporteProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteUsuarios.Designer.cs">
+      <DependentUpon>ReporteUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte_Presentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte_Presentacion.Designer.cs">
+      <DependentUpon>Reporte_Presentacion.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +191,24 @@
     <EmbeddedResource Include="Reportes\Listado_Productos.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Proveedores.rdlc" />
     <EmbeddedResource Include="Reportes\Listado_Usuarios.rdlc" />
+    <EmbeddedResource Include="Reportes\ReorteProductos.resx">
+      <DependentUpon>ReorteProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteCategorias.resx">
+      <DependentUpon>ReporteCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteClientes.resx">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteProveedores.resx">
+      <DependentUpon>ReporteProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteUsuarios.resx">
+      <DependentUpon>ReporteUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte_Presentacion.resx">
+      <DependentUpon>Reporte_Presentacion.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="MiniSubControlDbDataSet.xsc">
       <DependentUpon>MiniSubControlDbDataSet.xsd</DependentUpon>

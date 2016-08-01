@@ -86,5 +86,41 @@ namespace MiniSupControl
             Registros.rPresentacion presentacion = new Registros.rPresentacion();
             presentacion.ShowDialog();
         }
+
+        private void categoriaToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Reportes.ReporteCategorias reporteCategorias = new Reportes.ReporteCategorias();
+            reporteCategorias.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteClientes reporteClientes = new Reportes.ReporteClientes();
+            reporteClientes.ShowDialog();
+        }
+
+        private void usuariosDelSistemaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteUsuarios reporteUsuarios = new Reportes.ReporteUsuarios();
+            reporteUsuarios.ShowDialog();
+        }
+
+        private void proveedorToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Reportes.ReporteProveedores reporteProveedores = new Reportes.ReporteProveedores();
+            reporteProveedores.ShowDialog();
+        }
+
+        private void productoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Reportes.ReorteProductos reporteProductos = new Reportes.ReorteProductos();
+            reporteProductos.ShowDialog();
+        }
+
+        private void presentacionToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Reportes.Reporte_Presentacion reportePresentacion = new Reportes.Reporte_Presentacion();
+            reportePresentacion.ShowDialog();
+        }
     }
 }
