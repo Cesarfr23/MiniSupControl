@@ -50,12 +50,16 @@ namespace BLL
 
         }
 
-        public static void Modificar(int ProveedorId, string empresa)
+        public static void Modificar(int ProveedorId, string empresa, string direccion, string telefono, string correo, string web)
         {
             using (var db = new MiniSubControlDb())
             {
                 var proveedor = db.Proveedor.Find(ProveedorId);
                 proveedor.Empresa = empresa;
+                proveedor.Direccion = direccion;
+                proveedor.Telefono = telefono;
+                proveedor.Correo = correo;
+                proveedor.Web = web;
                 db.SaveChanges();
             }
         }

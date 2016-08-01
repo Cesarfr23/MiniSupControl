@@ -75,6 +75,7 @@
             // 
             // PresentacionComboBox
             // 
+            this.PresentacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PresentacionComboBox.FormattingEnabled = true;
             this.PresentacionComboBox.Location = new System.Drawing.Point(113, 217);
             this.PresentacionComboBox.Name = "PresentacionComboBox";
@@ -83,6 +84,7 @@
             // 
             // CategoriaComboBox
             // 
+            this.CategoriaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriaComboBox.FormattingEnabled = true;
             this.CategoriaComboBox.Location = new System.Drawing.Point(113, 181);
             this.CategoriaComboBox.Name = "CategoriaComboBox";
@@ -92,7 +94,6 @@
             // BuscarButton
             // 
             this.BuscarButton.BackColor = System.Drawing.Color.White;
-            this.BuscarButton.Enabled = false;
             this.BuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuscarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
@@ -103,7 +104,7 @@
             this.BuscarButton.TabIndex = 14;
             this.BuscarButton.Text = "Buscar";
             this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.UseVisualStyleBackColor = false;
             this.BuscarButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // CantidadTextBox

@@ -51,8 +51,7 @@
             this.ventaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoriaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.presentacionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.presentacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,8 +77,8 @@
             this.cerrarSeccionToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
-            this.archivosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.archivosToolStripMenuItem.Text = "Archivos";
+            this.archivosToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivosToolStripMenuItem.Text = "Sistema";
             // 
             // cerrarSeccionToolStripMenuItem
             // 
@@ -102,7 +101,8 @@
             this.clienteToolStripMenuItem,
             this.proveedorToolStripMenuItem,
             this.productoToolStripMenuItem,
-            this.categoriaToolStripMenuItem});
+            this.categoriaToolStripMenuItem,
+            this.presentacionToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.registrosToolStripMenuItem.Text = "Registros";
@@ -130,9 +130,6 @@
             // 
             // productoToolStripMenuItem
             // 
-            this.productoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.categoriaToolStripMenuItem1,
-            this.presentacionToolStripMenuItem1});
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
             this.productoToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.productoToolStripMenuItem.Text = "Producto";
@@ -224,21 +221,15 @@
             // 
             this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
             this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.categoriaToolStripMenuItem.Text = "Proveedor";
+            this.categoriaToolStripMenuItem.Text = "Categoria";
+            this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
             // 
-            // categoriaToolStripMenuItem1
+            // presentacionToolStripMenuItem
             // 
-            this.categoriaToolStripMenuItem1.Name = "categoriaToolStripMenuItem1";
-            this.categoriaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.categoriaToolStripMenuItem1.Text = "Categoria";
-            this.categoriaToolStripMenuItem1.Click += new System.EventHandler(this.categoriaToolStripMenuItem1_Click);
-            // 
-            // presentacionToolStripMenuItem1
-            // 
-            this.presentacionToolStripMenuItem1.Name = "presentacionToolStripMenuItem1";
-            this.presentacionToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.presentacionToolStripMenuItem1.Text = "Presentacion";
-            this.presentacionToolStripMenuItem1.Click += new System.EventHandler(this.presentacionToolStripMenuItem1_Click);
+            this.presentacionToolStripMenuItem.Name = "presentacionToolStripMenuItem";
+            this.presentacionToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.presentacionToolStripMenuItem.Text = "Presentacion";
+            this.presentacionToolStripMenuItem.Click += new System.EventHandler(this.presentacionToolStripMenuItem_Click);
             // 
             // MiniSupControl
             // 
@@ -282,9 +273,8 @@
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ventaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem presentacionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem presentacionToolStripMenuItem;
     }
 }
 

@@ -15,6 +15,6 @@ namespace Entidades
         public string Direccion { get; set;}
         public string Telefono { get; set;}
         public string Correo { get; set;}
-        public int RNC { get; set; }
+        public string Web { get; set; }
     }
 }

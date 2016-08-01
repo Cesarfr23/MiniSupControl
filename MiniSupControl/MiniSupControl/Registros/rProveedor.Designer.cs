@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rProveedor));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ProveedorButton = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BuscarButton = new System.Windows.Forms.Button();
+            this.WebTextBox = new System.Windows.Forms.TextBox();
+            this.CorreoTextBox = new System.Windows.Forms.TextBox();
+            this.TelefonoTextBox = new System.Windows.Forms.TextBox();
+            this.DireccionTextBox = new System.Windows.Forms.TextBox();
+            this.EmpresaTextBox = new System.Windows.Forms.TextBox();
+            this.ProveedorIdTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,13 +54,13 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.ProveedorButton);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.BuscarButton);
+            this.groupBox1.Controls.Add(this.WebTextBox);
+            this.groupBox1.Controls.Add(this.CorreoTextBox);
+            this.groupBox1.Controls.Add(this.TelefonoTextBox);
+            this.groupBox1.Controls.Add(this.DireccionTextBox);
+            this.groupBox1.Controls.Add(this.EmpresaTextBox);
+            this.groupBox1.Controls.Add(this.ProveedorIdTextBox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -74,62 +74,63 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Del Proveedor";
             // 
-            // ProveedorButton
+            // BuscarButton
             // 
-            this.ProveedorButton.BackColor = System.Drawing.Color.White;
-            this.ProveedorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProveedorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProveedorButton.Image = ((System.Drawing.Image)(resources.GetObject("ProveedorButton.Image")));
-            this.ProveedorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ProveedorButton.Location = new System.Drawing.Point(390, 17);
-            this.ProveedorButton.Name = "ProveedorButton";
-            this.ProveedorButton.Size = new System.Drawing.Size(96, 46);
-            this.ProveedorButton.TabIndex = 12;
-            this.ProveedorButton.Text = "Buscar";
-            this.ProveedorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ProveedorButton.UseVisualStyleBackColor = false;
+            this.BuscarButton.BackColor = System.Drawing.Color.White;
+            this.BuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuscarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuscarButton.Image = ((System.Drawing.Image)(resources.GetObject("BuscarButton.Image")));
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BuscarButton.Location = new System.Drawing.Point(390, 17);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(96, 46);
+            this.BuscarButton.TabIndex = 12;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BuscarButton.UseVisualStyleBackColor = false;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // textBox6
+            // WebTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(100, 232);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(443, 20);
-            this.textBox6.TabIndex = 11;
+            this.WebTextBox.Location = new System.Drawing.Point(100, 232);
+            this.WebTextBox.Name = "WebTextBox";
+            this.WebTextBox.Size = new System.Drawing.Size(443, 20);
+            this.WebTextBox.TabIndex = 11;
             // 
-            // textBox5
+            // CorreoTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(100, 192);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(443, 20);
-            this.textBox5.TabIndex = 10;
+            this.CorreoTextBox.Location = new System.Drawing.Point(100, 192);
+            this.CorreoTextBox.Name = "CorreoTextBox";
+            this.CorreoTextBox.Size = new System.Drawing.Size(443, 20);
+            this.CorreoTextBox.TabIndex = 10;
             // 
-            // textBox4
+            // TelefonoTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(101, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(443, 20);
-            this.textBox4.TabIndex = 9;
+            this.TelefonoTextBox.Location = new System.Drawing.Point(101, 153);
+            this.TelefonoTextBox.Name = "TelefonoTextBox";
+            this.TelefonoTextBox.Size = new System.Drawing.Size(443, 20);
+            this.TelefonoTextBox.TabIndex = 9;
             // 
-            // textBox3
+            // DireccionTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 114);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(443, 20);
-            this.textBox3.TabIndex = 8;
+            this.DireccionTextBox.Location = new System.Drawing.Point(100, 114);
+            this.DireccionTextBox.Name = "DireccionTextBox";
+            this.DireccionTextBox.Size = new System.Drawing.Size(443, 20);
+            this.DireccionTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // EmpresaTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(443, 20);
-            this.textBox2.TabIndex = 7;
+            this.EmpresaTextBox.Location = new System.Drawing.Point(101, 75);
+            this.EmpresaTextBox.Name = "EmpresaTextBox";
+            this.EmpresaTextBox.Size = new System.Drawing.Size(443, 20);
+            this.EmpresaTextBox.TabIndex = 7;
             // 
-            // textBox1
+            // ProveedorIdTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 20);
-            this.textBox1.TabIndex = 6;
+            this.ProveedorIdTextBox.Location = new System.Drawing.Point(100, 37);
+            this.ProveedorIdTextBox.Name = "ProveedorIdTextBox";
+            this.ProveedorIdTextBox.Size = new System.Drawing.Size(252, 20);
+            this.ProveedorIdTextBox.TabIndex = 6;
             // 
             // label6
             // 
@@ -138,7 +139,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "RNC";
+            this.label6.Text = "Wep";
             // 
             // label5
             // 
@@ -200,6 +201,7 @@
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.NuevoButton.UseVisualStyleBackColor = false;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // GuardarButton
             // 
@@ -216,6 +218,7 @@
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.GuardarButton.UseVisualStyleBackColor = false;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // ModificarButton
             // 
@@ -232,6 +235,7 @@
             this.ModificarButton.Text = "Modificar";
             this.ModificarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ModificarButton.UseVisualStyleBackColor = false;
+            this.ModificarButton.Click += new System.EventHandler(this.ModificarButton_Click);
             // 
             // EliminarButton
             // 
@@ -248,6 +252,7 @@
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.EliminarButton.UseVisualStyleBackColor = false;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // label7
             // 
@@ -260,7 +265,7 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Proveedor";
             // 
-            // Proveedor
+            // rProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -273,7 +278,7 @@
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.groupBox1);
             this.MinimumSize = new System.Drawing.Size(656, 478);
-            this.Name = "Proveedor";
+            this.Name = "rProveedor";
             this.Text = "Proveedor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -285,13 +290,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button ProveedorButton;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BuscarButton;
+        private System.Windows.Forms.TextBox WebTextBox;
+        private System.Windows.Forms.TextBox CorreoTextBox;
+        private System.Windows.Forms.TextBox TelefonoTextBox;
+        private System.Windows.Forms.TextBox DireccionTextBox;
+        private System.Windows.Forms.TextBox EmpresaTextBox;
+        private System.Windows.Forms.TextBox ProveedorIdTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

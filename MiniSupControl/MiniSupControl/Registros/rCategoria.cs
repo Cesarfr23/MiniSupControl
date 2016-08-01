@@ -74,7 +74,7 @@ namespace MiniSupControl.Registros
         private void ModificarButton_Click(object sender, EventArgs e)
         {
             LlenarClase(categoria);
-            CategoriaBll.Modificar(StringToInt(CategoriaIdTextBox.Text), DescripcionTextBox.Text)
+            CategoriaBll.Modificar(StringToInt(CategoriaIdTextBox.Text), DescripcionTextBox.Text);
         }
 
         private void EliminarButton_Click(object sender, EventArgs e)
@@ -83,5 +83,5 @@ namespace MiniSupControl.Registros
             Limpiar();
         }
     }
-    }
+   
 }

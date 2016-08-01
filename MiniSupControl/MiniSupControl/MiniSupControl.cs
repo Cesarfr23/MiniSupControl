@@ -66,11 +66,22 @@ namespace MiniSupControl
 
         private void categoriaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Registros.rCategoria categoria = new Registros.rCategoria();
-            categoria.ShowDialog();
+            
         }
 
         private void presentacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registros.rCategoria categoria = new Registros.rCategoria();
+            categoria.ShowDialog();
+
+        }
+
+        private void presentacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Registros.rPresentacion presentacion = new Registros.rPresentacion();
             presentacion.ShowDialog();
