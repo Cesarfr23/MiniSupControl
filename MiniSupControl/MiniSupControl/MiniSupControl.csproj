@@ -61,6 +61,14 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniSubControlDbDataSet.cs">
+      <DependentUpon>MiniSubControlDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MiniSubControlDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MiniSubControlDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MiniSupControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,7 +146,24 @@
     <EmbeddedResource Include="Registros\rUsuarioSistema.resx">
       <DependentUpon>rUsuarioSistema.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Listado_Clientes.rdlc" />
+    <EmbeddedResource Include="Reportes\Listado_Categorias.rdlc" />
+    <EmbeddedResource Include="Reportes\Listado_Presentacion.rdlc" />
+    <EmbeddedResource Include="Reportes\Listado_Productos.rdlc" />
+    <EmbeddedResource Include="Reportes\Listado_Proveedores.rdlc" />
+    <EmbeddedResource Include="Reportes\Listado_Usuarios.rdlc" />
     <None Include="app.config" />
+    <None Include="MiniSubControlDbDataSet.xsc">
+      <DependentUpon>MiniSubControlDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MiniSubControlDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiniSubControlDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MiniSubControlDbDataSet.xss">
+      <DependentUpon>MiniSubControlDbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -184,6 +209,7 @@
     <Content Include="Resources\Nuevo..png" />
     <Content Include="Resources\Nuevo.png" />
     <Content Include="Resources\ProyectoFondoOriginal.jpg" />
+    <Content Include="Resources\Reportes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
