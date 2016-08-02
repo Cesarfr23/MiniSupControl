@@ -281,6 +281,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1470117464_empty-shopping-cart.ico" />
+    <Content Include="DataBase\MiniSupControlDb.sql" />
     <Content Include="Resources\1452825463_agt_action_fail.png" />
     <Content Include="Resources\1452825521_Add.png" />
     <Content Include="Resources\1452899178_trash.png" />
