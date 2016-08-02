@@ -34,11 +34,18 @@ namespace DAL
                {
                    pa.MapLeftKey("ProductoId");
                    pa.MapRightKey("CategoriaId");
-                   pa.ToTable("Producto");
+                   pa.ToTable("ProductoCategoria");
                });
 
-
-
+            modelBuilder.Entity<Producto>()
+               .HasMany<Presentacion>(p => p.Presentacion)
+               .WithMany(pr => pr.Producto)
+               .Map(pa =>
+               {
+                   pa.MapLeftKey("ProductoId");
+                   pa.MapRightKey("PresentacionId");
+                   pa.ToTable("ProductoPresentacion");
+               });
         }
 
     }

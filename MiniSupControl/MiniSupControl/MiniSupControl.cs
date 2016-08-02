@@ -76,15 +76,12 @@ namespace MiniSupControl
 
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registros.rCategoria categoria = new Registros.rCategoria();
-            categoria.ShowDialog();
 
         }
 
         private void presentacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Registros.rPresentacion presentacion = new Registros.rPresentacion();
-            presentacion.ShowDialog();
+            
         }
 
         private void categoriaToolStripMenuItem1_Click_1(object sender, EventArgs e)
@@ -125,8 +122,6 @@ namespace MiniSupControl
 
         private void categoriaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Consultas.ConsultarCategorias consultarCategoria = new Consultas.ConsultarCategorias();
-            consultarCategoria.ShowDialog();
         }
 
         private void usuariosDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -155,8 +150,12 @@ namespace MiniSupControl
 
         private void presentacionToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Consultas.ConsultarPresentacion consultaPresentacion = new Consultas.ConsultarPresentacion();
-            consultaPresentacion.ShowDialog();
+          
+        }
+
+        private void MiniSupControl_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

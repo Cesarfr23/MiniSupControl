@@ -18,6 +18,6 @@ namespace Entidades
         public int PresentacionId { get; set; }
 
         public virtual List<Entidades.Categoria> Categoria { get; set; }
-        public virtual Presentacion Presentacion { get; set; }
+        public virtual List<Entidades.Presentacion> Presentacion { get; set; }
     }
 }

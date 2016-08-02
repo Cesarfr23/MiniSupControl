@@ -37,7 +37,6 @@ namespace MiniSupControl.Registros
             NombreTextBox.Clear();
             DescripcionTextBox.Clear();
             CantidadTextBox.Clear();
-            CategoriaComboBox.SelectedIndex = 0;
             PresentacionComboBox.SelectedIndex = 0;
         }
 
@@ -47,8 +46,8 @@ namespace MiniSupControl.Registros
             NombreTextBox.Text = producto.Nombre;
             DescripcionTextBox.Text = producto.Descripcion;
             CantidadTextBox.Text = producto.Cantidad.ToString();
-            CategoriaComboBox.DataSource = producto.Categoria;
-            PresentacionComboBox.DataSource = producto.Presentacion;
+            CategoriaDataGridView.DataSource = producto.Categoria;
+            PresentacionDataGridView.DataSource = producto.Presentacion;
         }
 
         private void LlenarClase(Producto producto)
@@ -57,8 +56,6 @@ namespace MiniSupControl.Registros
             producto.Nombre = NombreTextBox.Text;
             producto.Descripcion = DescripcionTextBox.Text;
             producto.Cantidad = StringToInt(CantidadTextBox.Text);
-            producto.CategoriaId = (int)CategoriaComboBox.SelectedValue;
-            producto.PresentacionId = (int)PresentacionComboBox.SelectedValue;
         }
 
         public int StringToInt(string texto)
@@ -72,9 +69,9 @@ namespace MiniSupControl.Registros
 
         private void rProductos_Load(object sender, EventArgs e)
         {
-            CategoriaComboBox.DataSource = CategoriaBll.GetLista();
-            CategoriaComboBox.ValueMember = "CategoriaId";
-            CategoriaComboBox.DisplayMember = "Descripcion";
+            PresentacionComboBox.DataSource = CategoriaBll.GetLista();
+            PresentacionComboBox.ValueMember = "CategoriaId";
+            PresentacionComboBox.DisplayMember = "Descripcion";
 
             PresentacionComboBox.DataSource = PresentacionBll.GetLista();
             PresentacionComboBox.ValueMember = "PresentacionId";
@@ -96,7 +93,7 @@ namespace MiniSupControl.Registros
         {
             LlenarClase(producto);
             ProductoBll.Modificar(StringToInt(ProductoIdTextBox.Text), NombreTextBox.Text, DescripcionTextBox.Text,
-                StringToInt(CantidadTextBox.Text), StringToInt(CategoriaComboBox.Text), StringToInt(PresentacionComboBox.Text));
+                StringToInt(CantidadTextBox.Text), StringToInt(PresentacionComboBox.Text));
         }
         private void CategoriaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -109,6 +106,11 @@ namespace MiniSupControl.Registros
             CategoriaDataGridView.DataSource = producto.Categoria;
         }
 
-        
+        private void AgregarButton_Click(object sender, EventArgs e)
+        {
+            producto.Presentacion.Add(new Presentacion((int)PresentacionIdComboBox.SelectedValue, PresentacionIdComboBox.Text));
+            CategoriaDataGridView.AutoGenerateColumns = false;
+            CategoriaDataGridView.DataSource = producto.Presentacion;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,15 @@ namespace Entidades
         [Key]
         public int PresentacionId { get; set; }
         public string Descripcion { get; set; }
+
+        [Browsable(false)]
+        public virtual ICollection<Producto> Producto { get; set; }
+
+        public Presentacion(int presentacionId, string descripcion)
+        {
+            this.PresentacionId = presentacionId;
+            this.Descripcion = descripcion;
+            this.Producto = new HashSet<Producto>();
+        }
     }
 }

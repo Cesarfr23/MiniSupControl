@@ -82,10 +82,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private MiniSubControlDbDataSet miniSubControlDbDataSet;
-        private System.Windows.Forms.BindingSource miniSubControlDbDataSetBindingSource;
-        private System.Windows.Forms.BindingSource ProductoesBindingSource;
         private MiniSubControlDbDataSet MiniSubControlDbDataSet;
+        private System.Windows.Forms.BindingSource ProductoesBindingSource;
         private MiniSubControlDbDataSetTableAdapters.ProductoesTableAdapter ProductoesTableAdapter;
     }
 }

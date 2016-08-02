@@ -31,14 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rProductos));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PresentacionComboBox = new System.Windows.Forms.ComboBox();
-            this.CategoriaComboBox = new System.Windows.Forms.ComboBox();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.CantidadTextBox = new System.Windows.Forms.TextBox();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.ProductoIdTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -69,14 +67,12 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.PresentacionComboBox);
-            this.groupBox1.Controls.Add(this.CategoriaComboBox);
             this.groupBox1.Controls.Add(this.BuscarButton);
             this.groupBox1.Controls.Add(this.CantidadTextBox);
             this.groupBox1.Controls.Add(this.DescripcionTextBox);
             this.groupBox1.Controls.Add(this.NombreTextBox);
             this.groupBox1.Controls.Add(this.ProductoIdTextBox);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -92,19 +88,10 @@
             // 
             this.PresentacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PresentacionComboBox.FormattingEnabled = true;
-            this.PresentacionComboBox.Location = new System.Drawing.Point(113, 217);
+            this.PresentacionComboBox.Location = new System.Drawing.Point(113, 180);
             this.PresentacionComboBox.Name = "PresentacionComboBox";
             this.PresentacionComboBox.Size = new System.Drawing.Size(515, 21);
             this.PresentacionComboBox.TabIndex = 16;
-            // 
-            // CategoriaComboBox
-            // 
-            this.CategoriaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CategoriaComboBox.FormattingEnabled = true;
-            this.CategoriaComboBox.Location = new System.Drawing.Point(113, 181);
-            this.CategoriaComboBox.Name = "CategoriaComboBox";
-            this.CategoriaComboBox.Size = new System.Drawing.Size(515, 21);
-            this.CategoriaComboBox.TabIndex = 15;
             // 
             // BuscarButton
             // 
@@ -153,20 +140,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 220);
+            this.label6.Location = new System.Drawing.Point(30, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Presentacion";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Categoria";
             // 
             // label4
             // 
@@ -367,6 +345,7 @@
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AgregarButton.UseVisualStyleBackColor = false;
+            this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
             // 
             // PresentacionIdComboBox
             // 
@@ -429,7 +408,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -445,7 +423,6 @@
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox PresentacionComboBox;
-        private System.Windows.Forms.ComboBox CategoriaComboBox;
         private System.Windows.Forms.GroupBox Categorias;
         private System.Windows.Forms.Button Agregar1Button;
         private System.Windows.Forms.Label label8;
