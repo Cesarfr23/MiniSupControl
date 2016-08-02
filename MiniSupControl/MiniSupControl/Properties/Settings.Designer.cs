@@ -26,11 +26,11 @@ namespace MiniSupControl.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4ECK98H\\SQLEXPRESS;Initial Catalog=MiniSubControlDb;Integrate" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4ECK98H\\SQLEXPRESS;Initial Catalog=MiniSupControlDb;Integrate" +
             "d Security=True")]
-        public string MiniSubControl {
+        public string MiniSuPControl {
             get {
-                return ((string)(this["MiniSubControl"]));
+                return ((string)(this["MiniSuPControl"]));
             }
         }
     }

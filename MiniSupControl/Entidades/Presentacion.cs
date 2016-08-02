@@ -14,6 +14,11 @@ namespace Entidades
         public int PresentacionId { get; set; }
         public string Descripcion { get; set; }
 
+        public Presentacion()
+        {
+
+        }
+
         [Browsable(false)]
         public virtual ICollection<Producto> Producto { get; set; }
 

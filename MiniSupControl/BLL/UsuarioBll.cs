@@ -79,5 +79,17 @@ namespace BLL
             return lista;
 
         }
+
+        public static List<Usuario> GetListaUsuario(string aux)
+        {
+            List<Usuario> lista = new List<Usuario>();
+
+            var db = new MiniSubControlDb();
+
+            lista = db.Usuario.Where(p => p.UseName == aux).ToList();
+
+            return lista;
+
+        }
     }
 }

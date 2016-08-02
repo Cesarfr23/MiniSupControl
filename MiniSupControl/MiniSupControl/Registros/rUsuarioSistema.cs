@@ -23,13 +23,9 @@ namespace MiniSupControl.Registros
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
-            try
+            if (Validar("Favor Inserte el Id") && ValidarBuscar())
             {
                 LlenaCampos(UsuarioBll.Buscar(StringToInt(UsuarioIdTextBox.Text)));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -73,7 +69,20 @@ namespace MiniSupControl.Registros
             usuario.Clave = PassTextBox.Text;
             usuario.ConfirmarClave = ConfiPassTextBox.Text;
         }
+        private bool Validar(string message)
+        {
+            if (string.IsNullOrEmpty(UsuarioIdTextBox.Text))
+            {
+                ErrorProvider.ReferenceEquals(UsuarioIdTextBox, "Ingresar el ID");
+                MessageBox.Show(message);
+                return false;
+            }
+            else
+            {
 
+                return true;
+            }
+        }
         public int StringToInt(string texto)
         {
             int numero = 0;
@@ -81,6 +90,17 @@ namespace MiniSupControl.Registros
             int.TryParse(texto, out numero);
 
             return numero;
+        }
+
+        private bool ValidarBuscar()
+        {
+            if (UsuarioBll.Buscar(StringToInt(UsuarioIdTextBox.Text)) == null)
+            {
+                MessageBox.Show("Este registro no existe");
+                return false;
+            }
+            return true;
+
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
@@ -101,15 +121,26 @@ namespace MiniSupControl.Registros
         private void GuardarButton_Click(object sender, EventArgs e)
         {
             LlenarClase(usuario);
-            UsuarioBll.Insertar(usuario);
+            if (ValidarUsuario())
+            {
+                UsuarioBll.Insertar(usuario);
+                Limpiar();
+                MessageBox.Show("Guardado con exito");
+            }
+
         }
 
         private void ModificarButton_Click(object sender, EventArgs e)
         {
-            LlenarClase(usuario);
-            UsuarioBll.Modificar(StringToInt(UsuarioIdTextBox.Text), NombreTextBox.Text, ApellidoTextBox.Text,
-                SexoComboBox.Text, FechaDataTimePicker.Text, CorreoTextBox.Text, AccesoComboBox.Text, UsuarioTextBox.Text,
-                PassTextBox.Text, ConfiPassTextBox.Text);
+            if(Validar("Intrudusca Id") && ValidarUsuario())
+            {
+                LlenarClase(usuario);
+                UsuarioBll.Modificar(StringToInt(UsuarioIdTextBox.Text), NombreTextBox.Text, ApellidoTextBox.Text,
+                    SexoComboBox.Text, FechaDataTimePicker.Text, CorreoTextBox.Text, AccesoComboBox.Text, UsuarioTextBox.Text,
+                    PassTextBox.Text, ConfiPassTextBox.Text);
+                Limpiar();
+                MessageBox.Show("Modificado con exito");
+            }
 
         }
 
@@ -117,6 +148,44 @@ namespace MiniSupControl.Registros
         {
             UsuarioBll.Eliminar(StringToInt(UsuarioIdTextBox.Text));
             Limpiar();
+            MessageBox.Show("Eliminado con Exito");
         }
+
+        private bool ValidarUsuario()
+        {
+            if (string.IsNullOrEmpty(UsuarioTextBox.Text) && string.IsNullOrEmpty(PassTextBox.Text) && string.IsNullOrEmpty(ConfiPassTextBox.Text))
+            {
+                ErrorProvider.Equals(UsuarioTextBox, "Favor ingresar el nombre de Usuario");
+                ErrorProvider.Equals(PassTextBox, "Favor ingresar la contraseña");
+                ErrorProvider.Equals(ConfiPassTextBox, "Favor confirmar comtraseña");
+                MessageBox.Show("Favor llenar todos los campos obligatorios");
+
+            }
+            if (string.IsNullOrEmpty(UsuarioTextBox.Text))
+            {
+                ErrorProvider.Equals(UsuarioTextBox, "Favor ingresar el nombre de Usuario");
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(PassTextBox.Text))
+            {
+                ErrorProvider.Equals(PassTextBox, "Favor ingresar la contraseña del usuario");
+                return false;
+            }
+            if (string.IsNullOrEmpty(ConfiPassTextBox.Text))
+            {
+                ErrorProvider.Equals(ConfiPassTextBox, "Favor confirmar comtraseña");
+                return false;
+            }
+
+            if (ConfiPassTextBox.Text != PassTextBox.Text)
+            {
+
+                ErrorProvider.Equals(ConfiPassTextBox, "La contraseña no coincide");
+                return false;
+            }
+            return true;
+
     }
+}
 }

@@ -3266,7 +3266,7 @@ namespace MiniSupControl.MiniSubControlDbDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSubControl;
+            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSuPControl;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3605,7 +3605,7 @@ SELECT ClienteId, Nombre, Apellido, Direccion, Telefono, Deuda FROM Clientes WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSubControl;
+            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSuPControl;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3999,7 +3999,7 @@ SELECT PresentacionId, Descripcion FROM Presentacions WHERE (PresentacionId = @P
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSubControl;
+            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSuPControl;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4339,7 +4339,7 @@ SELECT ProductoId, Nombre, Descripcion, Cantidad, CategoriaId, PresentacionId FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSubControl;
+            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSuPControl;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4763,7 +4763,7 @@ SELECT ProveedorId, Empresa, Direccion, Telefono, Correo, Web FROM Proveedors WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSubControl;
+            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSuPControl;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5216,7 +5216,7 @@ SELECT UsuarioId, Nombre, Apellido, Sexo, Fecha_Nacimiento, Correo, Acceso, UseN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSubControl;
+            this._connection.ConnectionString = global::MiniSupControl.Properties.Settings.Default.MiniSuPControl;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

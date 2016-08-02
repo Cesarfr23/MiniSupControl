@@ -30,13 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rProductos));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.PresentacionComboBox = new System.Windows.Forms.ComboBox();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.CantidadTextBox = new System.Windows.Forms.TextBox();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.ProductoIdTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,32 +64,21 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.PresentacionComboBox);
             this.groupBox1.Controls.Add(this.BuscarButton);
             this.groupBox1.Controls.Add(this.CantidadTextBox);
             this.groupBox1.Controls.Add(this.DescripcionTextBox);
             this.groupBox1.Controls.Add(this.NombreTextBox);
             this.groupBox1.Controls.Add(this.ProductoIdTextBox);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(31, 85);
+            this.groupBox1.Location = new System.Drawing.Point(31, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(634, 256);
+            this.groupBox1.Size = new System.Drawing.Size(634, 189);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Del Producto";
-            // 
-            // PresentacionComboBox
-            // 
-            this.PresentacionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PresentacionComboBox.FormattingEnabled = true;
-            this.PresentacionComboBox.Location = new System.Drawing.Point(113, 180);
-            this.PresentacionComboBox.Name = "PresentacionComboBox";
-            this.PresentacionComboBox.Size = new System.Drawing.Size(515, 21);
-            this.PresentacionComboBox.TabIndex = 16;
             // 
             // BuscarButton
             // 
@@ -137,15 +124,6 @@
             this.ProductoIdTextBox.Size = new System.Drawing.Size(237, 20);
             this.ProductoIdTextBox.TabIndex = 7;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Presentacion";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -190,7 +168,7 @@
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.Image = ((System.Drawing.Image)(resources.GetObject("NuevoButton.Image")));
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NuevoButton.Location = new System.Drawing.Point(30, 586);
+            this.NuevoButton.Location = new System.Drawing.Point(30, 425);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 67);
             this.NuevoButton.TabIndex = 1;
@@ -207,7 +185,7 @@
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.Image = ((System.Drawing.Image)(resources.GetObject("GuardarButton.Image")));
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.GuardarButton.Location = new System.Drawing.Point(221, 586);
+            this.GuardarButton.Location = new System.Drawing.Point(221, 425);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(75, 67);
             this.GuardarButton.TabIndex = 2;
@@ -224,7 +202,7 @@
             this.ModificarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModificarButton.Image = ((System.Drawing.Image)(resources.GetObject("ModificarButton.Image")));
             this.ModificarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.ModificarButton.Location = new System.Drawing.Point(414, 586);
+            this.ModificarButton.Location = new System.Drawing.Point(414, 425);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(75, 67);
             this.ModificarButton.TabIndex = 3;
@@ -241,20 +219,21 @@
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.Image = ((System.Drawing.Image)(resources.GetObject("EliminarButton.Image")));
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.EliminarButton.Location = new System.Drawing.Point(590, 586);
+            this.EliminarButton.Location = new System.Drawing.Point(590, 425);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 67);
             this.EliminarButton.TabIndex = 4;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.EliminarButton.UseVisualStyleBackColor = false;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(298, 32);
+            this.label7.Location = new System.Drawing.Point(298, -46);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 26);
             this.label7.TabIndex = 5;
@@ -267,7 +246,7 @@
             this.Categorias.Controls.Add(this.label8);
             this.Categorias.Controls.Add(this.CategoriaIdComboBox);
             this.Categorias.Controls.Add(this.CategoriaDataGridView);
-            this.Categorias.Location = new System.Drawing.Point(31, 380);
+            this.Categorias.Location = new System.Drawing.Point(31, 219);
             this.Categorias.Name = "Categorias";
             this.Categorias.Size = new System.Drawing.Size(315, 200);
             this.Categorias.TabIndex = 6;
@@ -324,7 +303,7 @@
             this.groupBox2.Controls.Add(this.PresentacionIdComboBox);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.PresentacionDataGridView);
-            this.groupBox2.Location = new System.Drawing.Point(352, 380);
+            this.groupBox2.Location = new System.Drawing.Point(352, 219);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(313, 200);
             this.groupBox2.TabIndex = 18;
@@ -378,7 +357,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(693, 665);
+            this.ClientSize = new System.Drawing.Size(693, 508);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Categorias);
             this.Controls.Add(this.label7);
@@ -387,7 +366,7 @@
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.groupBox1);
-            this.MinimumSize = new System.Drawing.Size(709, 704);
+            this.MinimumSize = new System.Drawing.Size(709, 547);
             this.Name = "rProductos";
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.rProductos_Load);
@@ -407,7 +386,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -422,7 +400,6 @@
         private System.Windows.Forms.Button ModificarButton;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox PresentacionComboBox;
         private System.Windows.Forms.GroupBox Categorias;
         private System.Windows.Forms.Button Agregar1Button;
         private System.Windows.Forms.Label label8;
