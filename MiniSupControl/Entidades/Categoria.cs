@@ -16,7 +16,7 @@ namespace Entidades
 
         public Categoria()
         {
-
+            this.Producto = new HashSet<Producto>();
         }
 
         [Browsable(false)]

@@ -11,7 +11,7 @@ namespace DAL
 {
     public class MiniSubControlDb : DbContext
     {
-        public MiniSubControlDb() : base("name=MiniSubControl")
+        public MiniSubControlDb() : base("name=MiniSupControl")
         {
         }
         public virtual DbSet<Categoria> Categoria { get; set; }

@@ -14,8 +14,6 @@ namespace Entidades
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public int Cantidad { get; set; }
-        public int CategoriaId { get; set; }
-        public int PresentacionId { get; set; }
 
         public virtual List<Entidades.Categoria> Categoria { get; set; }
         public virtual List<Entidades.Presentacion> Presentacion { get; set; }
