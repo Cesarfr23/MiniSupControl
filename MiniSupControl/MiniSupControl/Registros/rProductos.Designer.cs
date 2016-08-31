@@ -282,6 +282,12 @@
             // 
             this.CategoriaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategoriaIdComboBox.FormattingEnabled = true;
+            this.CategoriaIdComboBox.Items.AddRange(new object[] {
+            "Gaseosa",
+            "Jugos",
+            "Pan",
+            "Galletas",
+            "Papitas"});
             this.CategoriaIdComboBox.Location = new System.Drawing.Point(80, 24);
             this.CategoriaIdComboBox.Name = "CategoriaIdComboBox";
             this.CategoriaIdComboBox.Size = new System.Drawing.Size(162, 21);
@@ -330,6 +336,11 @@
             // 
             this.PresentacionIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PresentacionIdComboBox.FormattingEnabled = true;
+            this.PresentacionIdComboBox.Items.AddRange(new object[] {
+            "Frasco Plastico",
+            "Cajitas de Carton",
+            "Fundas",
+            "Paquetes"});
             this.PresentacionIdComboBox.Location = new System.Drawing.Point(97, 24);
             this.PresentacionIdComboBox.Name = "PresentacionIdComboBox";
             this.PresentacionIdComboBox.Size = new System.Drawing.Size(142, 21);
